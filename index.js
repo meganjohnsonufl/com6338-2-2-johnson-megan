@@ -9,11 +9,6 @@ function greet() {
     let ageInput = prompt("How old are you?");
     
     let age = parseInt(ageInput);
-    if (isNaN(age)) {
-        alert("That's not a valid age.");
-    } else {
-        alert("You are " + age + " years old.");
-    }
 
     let hasHadBirthday = confirm("Have you had your birthday this year?");
 
@@ -22,7 +17,7 @@ function greet() {
             birthYear = new Date().getFullYear()  - age;
             alert("You were born in " + birthYear + ".");
         } 
-        else [hasHadBirthday === false]; {
+        else {
             birthYear = new Date().getFullYear()  - age - 1;
             alert("You were born in " + birthYear + ".");
         }
